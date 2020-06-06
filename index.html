@@ -1,0 +1,74 @@
+<html>
+
+<head>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body class="main">
+  <center>
+    <h1 id="title" class="text-color">Student Survey Form</h1>
+    <main>
+      <p id="description" class="text-color">Fill the following form</p>
+
+      <form id="survey-form" class="fullform">
+        <div class="form-item-group">
+          <label for="name" id="name-label" class="label-text form-item ">Name</label><br>
+          <input type="text" id="name" pattern="[a-Z]{1,15}" placeholder="Enter your name" class="form-item box" required>
+        </div>
+        <div class="form-item-group">
+          <label for="number" id="number-label" class="label-text form-item">Age</label><br>
+          <input type="number" id="number" min="18" max="60" placeholder="age" class="box" required><br>
+        </div>
+
+        <div class="form-item-group">
+          <label for="emailAddress" id="email-label" class="label-text form-item">Your e-mail address</label><br>
+          <input id="email" class="box" type="email"  placeholder="enter your e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please provide only a Best Startup Ever corporate e-mail address" required><br>
+        </div>
+
+        <div class="form-item-group">
+          <p class="label-text form-item">Gender</p><br>
+          <input id="male" type="radio" name="gender" value="male">
+          <label for="male">Male</label>
+
+          <input id="female" type="radio" name="gender" value="female">
+          <label for="female">Female</label>
+        </div>
+
+        <div class="form-item-group">
+          <p class="label-text form-item">Please select your Hobbies</p><br>
+          <input id="hobbies" type="checkbox" value="swiming"> <label for="hobbies">swiming</label><br>
+
+          <input id="hobbies" type="checkbox" value="reading"> <label for="hobbies">reading</label><br>
+
+          <input id="hobbies" type="checkbox" value="travelling"> <label for="hobbies">travelling</label><br>
+
+          <input id="hobbies" type="checkbox" value="cycling"> <label for="hobbies">cycling</label><br>
+        </div>
+
+        <div class="form-item-group">
+          <label id="subject-label" for="dropdown" class="label-text form-item">Select your favourite subject</label><br>
+
+          <select id="dropdown" class="box">
+            <option value="Science">Science</option>
+            <option value="Maths">Maths</option>
+            <option value="History">History</option>
+          </select><br>
+        </div>
+
+        <div class="form-item-group">
+
+          <label id="sugest" class="form-item label-text">Any suggestion:</label>
+          <textarea name="message" rows="5" cols="70" placeholder="Enter your comment here"></textarea><br>
+        </div>
+        <div class="form-item-group">
+          <button type="submit" value="submit" id="submit" class="label-text form-item submit-box" >Submit</button>
+        </div>
+      </form>
+
+  </center>
+  </main>
+</body>
+
+</html>
